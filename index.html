@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>JS弹出图片鼠标滚动放大缩小效果</title>
+
+<link rel="stylesheet" type="text/css" href="img/style.css" />
+
+<script type="text/javascript">var IMGDIR = 'img/', VERHASH = 'zfhf', JSPATH = 'js/';</script>
+<script src="js/common.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div id="append_parent"></div><div id="ajaxwaitid"></div>
+<script src="js/forum_viewthread.js" type="text/javascript"></script>
+<script type="text/javascript">
+zoomstatus = parseInt(1);
+var imagemaxwidth = '500';//控制图片初始宽度
+var aimgcount = new Array();
+</script>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td>
+
+<img id="aimg_156139" aid="156139" src="img/none.gif" zoomfile="img/1.jpg" file="img/1.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="400" alt="夏日清凉 美女" title="夏日清凉 美女" />
+<br>
+
+<img id="aimg_156140" aid="156140" src="img/none.gif" zoomfile="img/2.jpg" file="img/2.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="400" alt="夏日清凉 美女" title="夏日清凉 美女" />
+<br>
+
+<img id="aimg_156141" aid="156141" src="img/none.gif" zoomfile="img/3.jpg" file="img/3.jpg" class="zoom" onclick="zoom(this, this.src, 0, 0, 0)" width="400" alt="夏日清凉 美女" title="夏日清凉 美女" />
+</td></tr>
+</table>
+
+<script type="text/javascript" reload="1">
+aimgcount[1000] = ['156139','156140','156141'];
+attachimggroup(1000);
+attachimgshow(1000);
+var aimgfid = 0;
+</script>
+
+</body>
+</html>
